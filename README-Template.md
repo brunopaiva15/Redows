@@ -26,4 +26,3 @@ Pour déployer et tester l'application, naviguez jusqu'au dossier /Redows/bin/De
 ## Licence
 
 Ce projet est sous licence GNU General Public License Version 3 - voir le fichier [LICENSE.md](LICENSE.md) pour plus de détails
-
