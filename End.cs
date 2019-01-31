@@ -18,6 +18,8 @@ namespace Redows
             InitializeComponent();
         }
 
+        int iLol = 1;
+
         private void btnInfos_Click(object sender, EventArgs e)
         {
             InfosAuteur infosAuteur = new InfosAuteur();
