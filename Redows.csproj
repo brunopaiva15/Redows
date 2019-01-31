@@ -154,11 +154,11 @@
     <Compile Include="End.Designer.cs">
       <DependentUpon>End.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Old.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Old.Designer.cs">
+      <DependentUpon>Old.cs</DependentUpon>
     </Compile>
     <Compile Include="InfosAuteur.cs">
       <SubType>Form</SubType>
@@ -196,8 +196,8 @@
     <EmbeddedResource Include="End.resx">
       <DependentUpon>End.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Old.resx">
+      <DependentUpon>Old.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfosAuteur.resx">
       <DependentUpon>InfosAuteur.cs</DependentUpon>
