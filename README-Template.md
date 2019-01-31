@@ -23,8 +23,6 @@ Pour déployer et tester l'application, naviguez jusqu'au dossier /Redows/bin/De
 
 * **Bruno Paiva** - https://brunopaiva.ch
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 ## Licence
 
 Ce projet est sous licence GNU General Public License Version 3 - voir le fichier [LICENSE.md](LICENSE.md) pour plus de détails
