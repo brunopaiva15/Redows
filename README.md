@@ -1,6 +1,7 @@
 # Redows
 
-Redows est un logiciel open source qui a été créé dans le but de réparer les fichiers endommagés de Windows.
+Redows est un logiciel de réparation gratuit et open source pour Windows. Tous les outils mis à disposition dans ce programme
+ont été créés et développés par Microsoft®.
 
 ## Importer le projet
 
@@ -26,3 +27,7 @@ Pour déployer et tester l'application, naviguez jusqu'au dossier /Redows/bin/De
 ## Licence
 
 Ce projet est sous licence GNU General Public License Version 3 - voir le fichier [LICENSE.md](LICENSE.md) pour plus de détails.
+
+### Téléchargement
+
+Pour télécharger le logiciel, rendez-vous sur https://brunopaiva.ch/redows.
