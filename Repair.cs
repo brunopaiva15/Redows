@@ -38,19 +38,6 @@ namespace Redows
                         {
                             //try
                             //{
-                            //    //MAIL
-                            //    Cursor.Current = Cursors.AppStarting;
-                            //    string mailBodyhtml = "Une personne vient de commencer une réparation. OS de la personne : " + winVersion.Text + ".";
-                            //    var msg = new MailMessage("ppaiva11144@gmail.com", "ppaiva11144@gmail.com", "Réparation commencée", mailBodyhtml);
-                            //    msg.IsBodyHtml = true;
-                            //    var smtpClient = new SmtpClient("smtp.gmail.com", 587);
-                            //    smtpClient.UseDefaultCredentials = true;
-                            //    smtpClient.Credentials = new NetworkCredential("ppaiva11144@gmail.com", "nhcadwupxrcthgbb");
-                            //    smtpClient.EnableSsl = true;
-                            //    smtpClient.Send(msg);
-                            //    Console.WriteLine("Email Sended Successfully");
-                            //    Cursor.Current = Cursors.Default;
-                            //    //MAIL
                             //}
                             //catch
                             //{
@@ -129,19 +116,6 @@ namespace Redows
 
                             //try
                             //{
-                            //    // MAIL
-                            //    Cursor.Current = Cursors.AppStarting;
-                            //    string mailBodyhtml1 = "Une personne vient de finir une réparation. OS de la personne : " + winVersion.Text + ".";
-                            //    var msg1 = new MailMessage("ppaiva11144@gmail.com", "ppaiva11144@gmail.com", "Réparation terminée", mailBodyhtml1);
-                            //    msg1.IsBodyHtml = true;
-                            //    var smtpClient1 = new SmtpClient("smtp.gmail.com", 587);
-                            //    smtpClient1.UseDefaultCredentials = true;
-                            //    smtpClient1.Credentials = new NetworkCredential("ppaiva11144@gmail.com", "nhcadwupxrcthgbb");
-                            //    smtpClient1.EnableSsl = true;
-                            //    smtpClient1.Send(msg1);
-                            //    Console.WriteLine("Email Sended Successfully");
-                            //    Cursor.Current = Cursors.Default;
-                            //    // MAIL
                             //}
                             //catch
                             //{
@@ -244,19 +218,6 @@ namespace Redows
             {
                 //try
                 //{
-                //    // MAIL
-                //    Cursor.Current = Cursors.AppStarting;
-                //    string mailBodyhtml = "Une personne vient de commencer une réparation. OS de la personne : " + winVersion.Text + ".";
-                //    var msg = new MailMessage("ppaiva11144@gmail.com", "ppaiva11144@gmail.com", "Réparation commencée", mailBodyhtml);
-                //    msg.IsBodyHtml = true;
-                //    var smtpClient = new SmtpClient("smtp.gmail.com", 587);
-                //    smtpClient.UseDefaultCredentials = true;
-                //    smtpClient.Credentials = new NetworkCredential("ppaiva11144@gmail.com", "nhcadwupxrcthgbb");
-                //    smtpClient.EnableSsl = true;
-                //    smtpClient.Send(msg);
-                //    Console.WriteLine("Email Sended Successfully");
-                //    Cursor.Current = Cursors.Default;
-                //    // MAIL
                 //}
                 //catch
                 //{
@@ -388,19 +349,6 @@ namespace Redows
 
                 //try
                 //{
-                //    // MAIL
-                //    Cursor.Current = Cursors.AppStarting;
-                //    string mailBodyhtml1 = "Une personne vient de finir une réparation. OS de la personne : " + winVersion.Text + ".";
-                //    var msg1 = new MailMessage("ppaiva11144@gmail.com", "ppaiva11144@gmail.com", "Réparation terminée", mailBodyhtml1);
-                //    msg1.IsBodyHtml = true;
-                //    var smtpClient1 = new SmtpClient("smtp.gmail.com", 587);
-                //    smtpClient1.UseDefaultCredentials = true;
-                //    smtpClient1.Credentials = new NetworkCredential("ppaiva11144@gmail.com", "nhcadwupxrcthgbb");
-                //    smtpClient1.EnableSsl = true;
-                //    smtpClient1.Send(msg1);
-                //    Console.WriteLine("Email Sended Successfully");
-                //    Cursor.Current = Cursors.Default;
-                //    // MAIL
                 //}
                 //catch
                 //{
