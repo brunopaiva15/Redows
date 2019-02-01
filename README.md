@@ -30,6 +30,6 @@ This project is licensed under the GNU General Public License Version 3 license 
 
 ## Download
 
-Last stable build : https://github.com/brunopaiva15/Redows/releases
+Last stable build : https://github.com/brunopaiva15/Redows/releases/latest
 
 Build in development : https://github.com/brunopaiva15/Redows/archive/dev.zip
