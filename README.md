@@ -1,35 +1,35 @@
 # Redows
 
-Redows est un logiciel de réparation gratuit et open source pour Windows. Tous les outils mis à disposition dans ce programme
-ont été créés et développés par Microsoft®.
+Redows is a free and open source repair software for Windows. All the tools made available in this program
+were created and developed by Microsoft®.
 
-## Importer le projet
+## Import the projet
 
-Ces instructions vous permettront d'obtenir une copie du projet en cours d'exécution sur votre machine locale à des fins de développement et de test.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Pré-requis
+### Prerequisites
 
-- Windows 7, 8.1 ou 10
+- Windows 7, 8.1 or 10
 - Visual Studio 2017
 
-### Importation
+### Import
 
-Pour commencer, téléchargez le projet sur GitHub. Décompressez le dossier quelque part sur votre ordinateur. Ensuite, ouvrez le fichier "Redows.sln" avec Visual Studio 2017. Et voilà. Le projet est ouvert et vous pouvez le modifier à votre convenance.
+To get started, download the project on GitHub. Unzip the folder somewhere on your computer. Then open the "Redows.sln" file with Visual Studio 2017. There you go. The project is open and you can modify it at your convenience.
 
-## Déploiement
+## Deployment
 
-Pour déployer et tester l'application, naviguez jusqu'au dossier /Redows/bin/Debug/ et lancez "Redows.exe".
+To deploy and test the application, navigate to the /Redows/bin/Debug/ folder and launch "Redows.exe".
 
-## Auteurs
+## Authors
 
 * **Bruno Paiva** - https://brunopaiva.ch
 
-## Licence
+## License
 
-Ce projet est sous licence GNU General Public License Version 3 - voir le fichier [LICENSE.md](LICENSE.md) pour plus de détails.
+This project is licensed under the GNU General Public License Version 3 license - see the [LICENSE.md](LICENSE.md) file for details.
 
-## Téléchargement
+## Download
 
-Dernière build stable : https://github.com/brunopaiva15/Redows/releases
+Last stable build : https://github.com/brunopaiva15/Redows/releases
 
-Build en développement : https://github.com/brunopaiva15/Redows/archive/dev.zip
+Build in development : https://github.com/brunopaiva15/Redows/archive/dev.zip
