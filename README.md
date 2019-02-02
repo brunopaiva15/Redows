@@ -18,7 +18,7 @@ To get started, download the project on GitHub. Unzip the folder somewhere on yo
 
 ## 💿 Deployment
 
-To deploy and test the application, navigate to the /Redows/bin/Debug/ folder and launch "Redows.exe".
+To deploy and test the application import it, compile it and navigate to the /Redows-dev/bin/Debug/ folder and launch "Redows.exe".
 
 ## ✒ Authors
 
