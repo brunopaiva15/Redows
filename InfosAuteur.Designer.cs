@@ -99,7 +99,7 @@ namespace Redows
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lblVersion);
-            this.groupBox1.Location = new System.Drawing.Point(12, 111);
+            this.groupBox1.Location = new System.Drawing.Point(11, 111);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(256, 101);
             this.groupBox1.TabIndex = 3;
@@ -149,7 +149,7 @@ namespace Redows
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(45, 365);
+            this.label6.Location = new System.Drawing.Point(48, 365);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(181, 26);
             this.label6.TabIndex = 29;
@@ -159,7 +159,7 @@ namespace Redows
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Redows.Properties.Resources._720px_GPLv3_Logo_svg;
-            this.pictureBox2.Location = new System.Drawing.Point(81, 459);
+            this.pictureBox2.Location = new System.Drawing.Point(83, 459);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(111, 55);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

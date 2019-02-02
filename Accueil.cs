@@ -162,7 +162,7 @@ namespace Redows
                 else
                 {
                     Cursor.Current = Cursors.Default;
-                    MessageBox.Show("This software is not up to date.\n\nThe latest version is : " + DERNIERE_VERSION + "\nA page in the default browser will open so that you can download it.\n\nModifications : \n\n" + CHANGELOG, "Check for updates", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("This software is not up to date.\n\nThe latest version is : " + DERNIERE_VERSION + "\nA page in the default browser will open so that you can download it.\n\nChanges : \n\n" + CHANGELOG, "Check for updates", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     WebClient MAJ2 = new WebClient();
                     string DownloadLink = MAJ2.DownloadString("https://brunopaiva.ch/Download.txt");
 

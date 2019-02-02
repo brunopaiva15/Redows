@@ -72,7 +72,7 @@ namespace Redows
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(90, 207);
+            this.btnStart.Location = new System.Drawing.Point(93, 207);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(177, 45);
             this.btnStart.TabIndex = 1;
@@ -83,7 +83,7 @@ namespace Redows
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Redows.Properties.Resources.winrep;
-            this.pictureBox1.Location = new System.Drawing.Point(134, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(138, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 81);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -93,7 +93,7 @@ namespace Redows
             // btnModeExpert
             // 
             this.btnModeExpert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModeExpert.Location = new System.Drawing.Point(90, 258);
+            this.btnModeExpert.Location = new System.Drawing.Point(93, 258);
             this.btnModeExpert.Name = "btnModeExpert";
             this.btnModeExpert.Size = new System.Drawing.Size(177, 23);
             this.btnModeExpert.TabIndex = 3;

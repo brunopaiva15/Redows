@@ -55,9 +55,9 @@ namespace Redows
             this.btnInfos = new System.Windows.Forms.Button();
             this.btnCheckUpdates = new System.Windows.Forms.Button();
             this.btnAvance = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitreBase = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +77,7 @@ namespace Redows
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(143, 168);
+            this.label3.Location = new System.Drawing.Point(145, 168);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 17);
             this.label3.TabIndex = 1;
@@ -87,7 +87,7 @@ namespace Redows
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(78, 197);
+            this.label1.Location = new System.Drawing.Point(83, 198);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(197, 51);
             this.label1.TabIndex = 2;
@@ -98,7 +98,7 @@ namespace Redows
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(102, 270);
+            this.btnStart.Location = new System.Drawing.Point(104, 272);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(155, 45);
             this.btnStart.TabIndex = 3;
@@ -108,7 +108,7 @@ namespace Redows
             // 
             // btnInfos
             // 
-            this.btnInfos.Location = new System.Drawing.Point(232, 350);
+            this.btnInfos.Location = new System.Drawing.Point(234, 352);
             this.btnInfos.Name = "btnInfos";
             this.btnInfos.Size = new System.Drawing.Size(25, 23);
             this.btnInfos.TabIndex = 5;
@@ -118,7 +118,7 @@ namespace Redows
             // 
             // btnCheckUpdates
             // 
-            this.btnCheckUpdates.Location = new System.Drawing.Point(102, 350);
+            this.btnCheckUpdates.Location = new System.Drawing.Point(104, 352);
             this.btnCheckUpdates.Name = "btnCheckUpdates";
             this.btnCheckUpdates.Size = new System.Drawing.Size(124, 23);
             this.btnCheckUpdates.TabIndex = 4;
@@ -129,7 +129,7 @@ namespace Redows
             // btnAvance
             // 
             this.btnAvance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAvance.Location = new System.Drawing.Point(102, 321);
+            this.btnAvance.Location = new System.Drawing.Point(104, 323);
             this.btnAvance.Name = "btnAvance";
             this.btnAvance.Size = new System.Drawing.Size(155, 23);
             this.btnAvance.TabIndex = 29;
@@ -137,21 +137,11 @@ namespace Redows
             this.btnAvance.UseVisualStyleBackColor = true;
             this.btnAvance.Click += new System.EventHandler(this.btnAvance_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Redows.Properties.Resources.winrep;
-            this.pictureBox1.Location = new System.Drawing.Point(135, 66);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 81);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
-            // 
             // lblTitreBase
             // 
             this.lblTitreBase.AutoSize = true;
             this.lblTitreBase.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitreBase.Location = new System.Drawing.Point(117, 9);
+            this.lblTitreBase.Location = new System.Drawing.Point(121, 8);
             this.lblTitreBase.Name = "lblTitreBase";
             this.lblTitreBase.Size = new System.Drawing.Size(119, 31);
             this.lblTitreBase.TabIndex = 30;
@@ -162,18 +152,28 @@ namespace Redows
             // 
             this.lblVersion.AutoSize = true;
             this.lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVersion.Location = new System.Drawing.Point(162, 40);
+            this.lblVersion.Location = new System.Drawing.Point(164, 40);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(35, 17);
             this.lblVersion.TabIndex = 31;
             this.lblVersion.Text = "v2.0";
             this.lblVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Redows.Properties.Resources.winrep;
+            this.pictureBox1.Location = new System.Drawing.Point(137, 72);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(88, 81);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 384);
+            this.ClientSize = new System.Drawing.Size(359, 391);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.lblTitreBase);
             this.Controls.Add(this.btnAvance);

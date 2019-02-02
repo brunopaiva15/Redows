@@ -258,6 +258,7 @@
     <Content Include="Logo.ico" />
     <None Include="Resources\gplv3-127x51.png" />
     <None Include="Resources\720px-GPLv3_Logo.svg.png" />
+    <None Include="Resources\Grid.png" />
     <Content Include="winrep.ico" />
     <None Include="Resources\winrep.png" />
   </ItemGroup>

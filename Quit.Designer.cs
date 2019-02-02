@@ -78,7 +78,7 @@ namespace Redows
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(106, 255);
+            this.btnExit.Location = new System.Drawing.Point(107, 255);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(162, 33);
             this.btnExit.TabIndex = 31;

@@ -163,7 +163,7 @@ namespace Redows
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Redows.Properties.Resources.winrep;
-            this.pictureBox1.Location = new System.Drawing.Point(136, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(138, 15);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 81);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

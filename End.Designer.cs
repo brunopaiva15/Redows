@@ -61,7 +61,7 @@ namespace Redows
             // btnRestart
             // 
             this.btnRestart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestart.Location = new System.Drawing.Point(93, 235);
+            this.btnRestart.Location = new System.Drawing.Point(97, 235);
             this.btnRestart.Name = "btnRestart";
             this.btnRestart.Size = new System.Drawing.Size(167, 27);
             this.btnRestart.TabIndex = 3;
@@ -73,7 +73,7 @@ namespace Redows
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(81, 187);
+            this.label1.Location = new System.Drawing.Point(81, 185);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(195, 34);
             this.label1.TabIndex = 2;
@@ -84,7 +84,7 @@ namespace Redows
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(109, 159);
+            this.label3.Location = new System.Drawing.Point(116, 156);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(125, 17);
             this.label3.TabIndex = 1;
@@ -113,7 +113,7 @@ namespace Redows
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Redows.Properties.Resources.winrep;
-            this.pictureBox1.Location = new System.Drawing.Point(135, 57);
+            this.pictureBox1.Location = new System.Drawing.Point(138, 56);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 81);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -123,7 +123,7 @@ namespace Redows
             // btnRestartLater
             // 
             this.btnRestartLater.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestartLater.Location = new System.Drawing.Point(93, 268);
+            this.btnRestartLater.Location = new System.Drawing.Point(97, 268);
             this.btnRestartLater.Name = "btnRestartLater";
             this.btnRestartLater.Size = new System.Drawing.Size(167, 27);
             this.btnRestartLater.TabIndex = 33;
