@@ -55,7 +55,7 @@ namespace Redows
         {
             try
             {
-                DialogResult form1 = MessageBox.Show("Etes-vous sûr(e) de vouloir quitter l'application ?", "Quitter", MessageBoxButtons.YesNo);
+                DialogResult form1 = MessageBox.Show("Are you sure you want to leave the application?", "Exit", MessageBoxButtons.YesNo);
 
                 if (form1 == DialogResult.Yes)
                 {
@@ -86,7 +86,7 @@ namespace Redows
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur lors de la fermeture du programme (0x000E_07).\n\n(" + ex.Message + ")", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error when closing the program.\n\n(" + ex.Message + ")", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -103,7 +103,7 @@ namespace Redows
                     if (ACTIF_OU_PAS != "1")
                     {
                         Cursor.Current = Cursors.Default;
-                        MessageBox.Show("Redows n'est pas disponible pour le moment. Désolé.", "Danger", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Redows is not available at the moment.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                         Quit quit = new Quit();
 
@@ -121,7 +121,7 @@ namespace Redows
                 }
                 else
                 {
-                    MessageBox.Show("Redows n'a pas réussi à contacter le serveur central.", "Erreur de réseau", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Redows was unable to contact the central server.", "Network error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Cursor.Current = Cursors.Default;
                     VERIFICATION_ACTIFOUPAS = false;
                 }
@@ -157,12 +157,12 @@ namespace Redows
                 if (VERSION == DERNIERE_VERSION)
                 {
                     Cursor.Current = Cursors.Default;
-                    MessageBox.Show("Le logiciel Redows est à jour. Aucune action n'est requise.", "Vérification de mise à jour");
+                    MessageBox.Show("This software is up to date. No action is required.", "Check for updates");
                 }
                 else
                 {
                     Cursor.Current = Cursors.Default;
-                    MessageBox.Show("Ce logiciel n'est pas à jour.\n\nLa dernière version est la version : " + DERNIERE_VERSION + "\nUne page dans le navigateur par défaut va s'ouvrir afin que vous puissiez la télécharger.\n\nModifications : \n\n" + CHANGELOG, "Vérification de mise à jour", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("This software is not up to date.\n\nThe latest version is : " + DERNIERE_VERSION + "\nA page in the default browser will open so that you can download it.\n\nChanges : \n\n" + CHANGELOG, "Check for updates", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     WebClient MAJ2 = new WebClient();
                     string DownloadLink = MAJ2.DownloadString("https://brunopaiva.ch/Download.txt");
 
@@ -191,7 +191,7 @@ namespace Redows
             }
             catch
             {
-                MessageBox.Show("Oh non... Redows n'a malheureusement pas réussi à se connecter au serveur. Veuillez vérifier votre connexion et réessayez.", "Erreur de réseau", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Oh no.... Unfortunately, Redows was unable to connect to the server. Please check your connection and try again.", "Network error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

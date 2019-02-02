@@ -55,11 +55,13 @@ namespace Redows
             this.lblVersion = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,12 +99,12 @@ namespace Redows
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lblVersion);
-            this.groupBox1.Location = new System.Drawing.Point(12, 111);
+            this.groupBox1.Location = new System.Drawing.Point(11, 111);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(256, 101);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Détails du système";
+            this.groupBox1.Text = "System details";
             // 
             // lblVersion
             // 
@@ -116,22 +118,53 @@ namespace Redows
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 225);
+            this.label4.Location = new System.Drawing.Point(31, 226);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(249, 52);
+            this.label4.Size = new System.Drawing.Size(217, 52);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Tous les outils mis à disposition dans ce programme\r\nont été créés et développés " +
-    "par Microsoft®.‎ \r\nNous sommes en aucun cas responsables de vos\r\nmanipulations.";
+            this.label4.Text = "All the tools made available in this program\r\nwere created and developed by Micro" +
+    "soft®. \r\nWe are in no way responsible for your\r\nmanipulations.";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(66, 479);
+            this.label5.Location = new System.Drawing.Point(61, 415);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 13);
+            this.label5.Size = new System.Drawing.Size(146, 13);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Logo créé par Guillaume P.";
+            this.label5.Text = "Logo created by Guillaume P.";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(40, 302);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(196, 39);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "This utility checks, analyses and repairs \r\ndamaged components of\r\nWindows. No vi" +
+    "ruses are deleted.";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(48, 365);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(181, 26);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "En cas de question, envoyez-moi\r\nun e-mail : ppaiva11144@gmail.com.";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Redows.Properties.Resources._720px_GPLv3_Logo_svg;
+            this.pictureBox2.Location = new System.Drawing.Point(83, 459);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(111, 55);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -143,44 +176,22 @@ namespace Redows
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // label8
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 298);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 39);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "Cet outil vérifie, analyse et répare \r\nles composants endommagés de\r\nWindows. Auc" +
-    "un virus n\'est supprimé.";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(46, 418);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(181, 26);
-            this.label6.TabIndex = 29;
-            this.label6.Text = "En cas de question, envoyez-moi\r\nun e-mail : ppaiva11144@gmail.com.";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(32, 358);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(214, 39);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "Pour des raisons essentiellement\r\nanalytiques, nous récoltons des informations\r\nà" +
-    " propos de votre système d\'exploitation.";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(54, 528);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(167, 13);
+            this.label8.TabIndex = 32;
+            this.label8.Text = "GNU General Public License v3.0";
             // 
             // InfosAuteur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 506);
-            this.Controls.Add(this.label7);
+            this.ClientSize = new System.Drawing.Size(277, 560);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
@@ -196,10 +207,11 @@ namespace Redows
             this.MinimizeBox = false;
             this.Name = "InfosAuteur";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "À propos";
+            this.Text = "About Redows";
             this.Load += new System.EventHandler(this.InfosAuteur_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -218,6 +230,7 @@ namespace Redows
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label8;
     }
 }

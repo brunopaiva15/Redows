@@ -49,14 +49,6 @@ namespace Redows
         {
             try
             {
-                //try
-                //{
-                //}
-                //catch
-                //{
-                //    MessageBox.Show("Oh. Vous n'avez pas de connexion à internet... Pas grave ! Continuons.", "Pas de réseau", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                //}
-
                 try
                 {
                     if (VERIFICATION_ACTIFOUPAS == true)
@@ -68,7 +60,7 @@ namespace Redows
                         if (ACTIF_OU_PAS != "1")
                         {
                             Cursor.Current = Cursors.Default;
-                            MessageBox.Show("Redows n'est pas disponible pour le moment. Désolé.", "Danger", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Redows is not available at the moment.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                             Quit quit = new Quit();
 
@@ -86,7 +78,7 @@ namespace Redows
                     }
                     else
                     {
-                        MessageBox.Show("Redows n'a pas réussi à contacter le serveur central. Nous vous recommendons très fortement de ne pas effectuer de réparation.", "Erreur de réseau", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Redows was unable to contact the central server. We strongly recommend that you do not carry out any repairs.", "Network error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         Cursor.Current = Cursors.Default;
                         VERIFICATION_ACTIFOUPAS = false;
                     }
@@ -103,7 +95,7 @@ namespace Redows
 
                 Cursor.Current = Cursors.AppStarting;
 
-                btnStart.Text = "Réparation en cours (Étape 1/3)...";
+                btnStart.Text = "Repair in progress (Step 1/3)...";
 
                 Process procSFC = new Process();
                 procSFC.StartInfo.FileName = "cmd.exe";
@@ -126,11 +118,10 @@ namespace Redows
                     procSFC.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
                 }
                 procSFC.Start();
-                btnStart.Text = "Réparation en cours (Étape 1/3)...";
                 Cursor.Current = Cursors.WaitCursor;
                 procSFC.WaitForExit();
 
-                btnStart.Text = "Réparation en cours (Étape 1/3)...";
+                btnStart.Text = "Repair in progress (Step 1/3)...";
 
                 Cursor.Current = Cursors.Default;
                 Cursor.Current = Cursors.AppStarting;
@@ -156,11 +147,10 @@ namespace Redows
                     proc.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
                 }
                 proc.Start();
-                btnStart.Text = "Réparation en cours (Étape 1/3)...";
                 Cursor.Current = Cursors.WaitCursor;
                 proc.WaitForExit();
 
-                btnStart.Text = "Réparation en cours (Étape 2/3)...";
+                btnStart.Text = "Repair in progress (Step 2/3)....";
 
                 Cursor.Current = Cursors.Default;
                 Cursor.Current = Cursors.AppStarting;
@@ -186,11 +176,10 @@ namespace Redows
                     proc1.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
                 }
                 proc1.Start();
-                btnStart.Text = "Réparation en cours (Étape 2/3)...";
                 Cursor.Current = Cursors.WaitCursor;
                 proc1.WaitForExit();
 
-                btnStart.Text = "Réparation en cours (Étape 3/3)...";
+                btnStart.Text = "Repair in progress (Step 3/3)...";
 
                 Cursor.Current = Cursors.Default;
                 Cursor.Current = Cursors.AppStarting;
@@ -216,11 +205,10 @@ namespace Redows
                     proc2.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
                 }
                 proc2.Start();
-                btnStart.Text = "Réparation en cours (Étape 3/3)...";
                 Cursor.Current = Cursors.WaitCursor;
                 proc2.WaitForExit();
 
-                btnStart.Text = "Réparation terminée";
+                btnStart.Text = "Repair completed";
 
                 Cursor.Current = Cursors.Default;
 
@@ -228,7 +216,7 @@ namespace Redows
                 lblTitre.Visible = true;
                 lblEnReparation.Visible = false;
 
-                MessageBox.Show("Réparation terminée avec succès.", "Succès", MessageBoxButtons.OK);
+                MessageBox.Show("Repair successfully completed.", "Success", MessageBoxButtons.OK);
 
                 End end = new End();
 
@@ -238,7 +226,7 @@ namespace Redows
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Oh. Une erreur inconnue s'est produite.\n\nErreur : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Oh. An unknown error occurred.\n\nError : " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -246,7 +234,7 @@ namespace Redows
         {
             try
             {
-                DialogResult form1 = MessageBox.Show("Etes-vous sûr(e) de vouloir quitter l'application ?", "Quitter", MessageBoxButtons.YesNo);
+                DialogResult form1 = MessageBox.Show("Are you sure you want to leave the utility ?", "Exit", MessageBoxButtons.YesNo);
 
                 if (form1 == DialogResult.Yes)
                 {
@@ -277,7 +265,7 @@ namespace Redows
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur lors de la fermeture du programme (0x000E_07).\n\n(" + ex.Message + ")", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error when closing the utility.\n\n(" + ex.Message + ")", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

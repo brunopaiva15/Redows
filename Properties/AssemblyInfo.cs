@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
 [assembly: AssemblyTitle("Redows")]
-[assembly: AssemblyDescription("Free and open source utility for Windows.")]
+[assembly: AssemblyDescription("Logiciel de réparation pour Windows.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Bruno Paiva")]
 [assembly: AssemblyProduct("Redows")]
@@ -54,5 +54,5 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("2.4")]
 [assembly: AssemblyFileVersion("2.4")]
-[assembly: NeutralResourcesLanguage("en-US")]
+[assembly: NeutralResourcesLanguage("fr-CH")]
 

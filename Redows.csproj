@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <!--
  *
  *  Copyright (C) 2019 Bruno Paiva
@@ -20,7 +19,6 @@
  * 
  *
  -->
-
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -176,12 +174,6 @@
     <Compile Include="End.Designer.cs">
       <DependentUpon>End.cs</DependentUpon>
     </Compile>
-    <Compile Include="Old.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Old.Designer.cs">
-      <DependentUpon>Old.cs</DependentUpon>
-    </Compile>
     <Compile Include="InfosAuteur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,9 +209,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="End.resx">
       <DependentUpon>End.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Old.resx">
-      <DependentUpon>Old.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfosAuteur.resx">
       <DependentUpon>InfosAuteur.cs</DependentUpon>
@@ -267,6 +256,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Logo.ico" />
+    <None Include="Resources\gplv3-127x51.png" />
+    <None Include="Resources\720px-GPLv3_Logo.svg.png" />
+    <None Include="Resources\Grid.png" />
     <Content Include="winrep.ico" />
     <None Include="Resources\winrep.png" />
   </ItemGroup>

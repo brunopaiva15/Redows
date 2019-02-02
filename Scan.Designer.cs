@@ -62,29 +62,28 @@ namespace Redows
             // 
             this.lblTitre.AutoSize = true;
             this.lblTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitre.Location = new System.Drawing.Point(69, 118);
+            this.lblTitre.Location = new System.Drawing.Point(99, 119);
             this.lblTitre.Name = "lblTitre";
-            this.lblTitre.Size = new System.Drawing.Size(212, 51);
+            this.lblTitre.Size = new System.Drawing.Size(169, 51);
             this.lblTitre.TabIndex = 0;
-            this.lblTitre.Text = "Pour réparer votre ordinateur, \r\ncliquez sur \"Réparer\".\r\n(Oui, c\'est aussi simple" +
-    " que ça !)\r\n";
+            this.lblTitre.Text = "To repair your computer, \r\nclick on \"Repair\".\r\n(Yes, it\'s that simple !)";
             this.lblTitre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(92, 207);
+            this.btnStart.Location = new System.Drawing.Point(93, 207);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(177, 45);
             this.btnStart.TabIndex = 1;
-            this.btnStart.Text = "Réparer";
+            this.btnStart.Text = "Repair";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Redows.Properties.Resources.winrep;
-            this.pictureBox1.Location = new System.Drawing.Point(134, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(138, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 81);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,11 +93,11 @@ namespace Redows
             // btnModeExpert
             // 
             this.btnModeExpert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModeExpert.Location = new System.Drawing.Point(92, 258);
+            this.btnModeExpert.Location = new System.Drawing.Point(93, 258);
             this.btnModeExpert.Name = "btnModeExpert";
             this.btnModeExpert.Size = new System.Drawing.Size(177, 23);
             this.btnModeExpert.TabIndex = 3;
-            this.btnModeExpert.Text = "Expert ->";
+            this.btnModeExpert.Text = "Advanced mode ->";
             this.btnModeExpert.UseVisualStyleBackColor = true;
             this.btnModeExpert.Click += new System.EventHandler(this.btnModeExpert_Click);
             // 
@@ -106,13 +105,12 @@ namespace Redows
             // 
             this.lblEnReparation.AutoSize = true;
             this.lblEnReparation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnReparation.Location = new System.Drawing.Point(25, 118);
+            this.lblEnReparation.Location = new System.Drawing.Point(59, 110);
             this.lblEnReparation.Name = "lblEnReparation";
-            this.lblEnReparation.Size = new System.Drawing.Size(305, 68);
+            this.lblEnReparation.Size = new System.Drawing.Size(243, 68);
             this.lblEnReparation.TabIndex = 29;
-            this.lblEnReparation.Text = "Redows effectue une réparation\r\ndes fichiers endommagés de votre système.\r\nVeuill" +
-    "ez patienter et ne touchez à rien.\r\nLa réparation peut prendre jusqu\'à 15 minute" +
-    "s.";
+            this.lblEnReparation.Text = "Redows performs a repair\r\nof the damaged files on your system.\r\nPlease wait and d" +
+    "on\'t touch anything.\r\nRepair can take up to 15 minutes.\r\n";
             this.lblEnReparation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblEnReparation.Visible = false;
             // 
@@ -132,7 +130,7 @@ namespace Redows
             this.btnRetourAccueil.Name = "btnRetourAccueil";
             this.btnRetourAccueil.Size = new System.Drawing.Size(84, 23);
             this.btnRetourAccueil.TabIndex = 39;
-            this.btnRetourAccueil.Text = "<- Accueil";
+            this.btnRetourAccueil.Text = "<- Home page";
             this.btnRetourAccueil.UseVisualStyleBackColor = true;
             this.btnRetourAccueil.Click += new System.EventHandler(this.btnRetourAccueil_Click);
             // 

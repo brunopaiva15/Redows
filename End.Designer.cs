@@ -61,11 +61,11 @@ namespace Redows
             // btnRestart
             // 
             this.btnRestart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestart.Location = new System.Drawing.Point(93, 235);
+            this.btnRestart.Location = new System.Drawing.Point(97, 235);
             this.btnRestart.Name = "btnRestart";
             this.btnRestart.Size = new System.Drawing.Size(167, 27);
             this.btnRestart.TabIndex = 3;
-            this.btnRestart.Text = "Redémarrer";
+            this.btnRestart.Text = "Restart";
             this.btnRestart.UseVisualStyleBackColor = true;
             this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
             // 
@@ -73,22 +73,22 @@ namespace Redows
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(45, 186);
+            this.label1.Location = new System.Drawing.Point(81, 185);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 34);
+            this.label1.Size = new System.Drawing.Size(195, 34);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Pour appliquer les modifications, veuillez\r\nredémarrer votre ordinateur.";
+            this.label1.Text = "To apply the changes, please\r\nrestart your computer.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(119, 160);
+            this.label3.Location = new System.Drawing.Point(116, 156);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 17);
+            this.label3.Size = new System.Drawing.Size(125, 17);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Windows réparé.";
+            this.label3.Text = "Windows repaired.";
             // 
             // lblTitre
             // 
@@ -113,7 +113,7 @@ namespace Redows
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Redows.Properties.Resources.winrep;
-            this.pictureBox1.Location = new System.Drawing.Point(135, 57);
+            this.pictureBox1.Location = new System.Drawing.Point(138, 56);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 81);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -123,11 +123,11 @@ namespace Redows
             // btnRestartLater
             // 
             this.btnRestartLater.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestartLater.Location = new System.Drawing.Point(93, 268);
+            this.btnRestartLater.Location = new System.Drawing.Point(97, 268);
             this.btnRestartLater.Name = "btnRestartLater";
             this.btnRestartLater.Size = new System.Drawing.Size(167, 27);
             this.btnRestartLater.TabIndex = 33;
-            this.btnRestartLater.Text = "Redémarrer plus tard";
+            this.btnRestartLater.Text = "Restart later";
             this.btnRestartLater.UseVisualStyleBackColor = true;
             this.btnRestartLater.Click += new System.EventHandler(this.btnRestartLater_Click);
             // 

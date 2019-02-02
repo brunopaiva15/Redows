@@ -64,7 +64,7 @@ namespace Redows
 
                 string ProductName = Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion", "ReleaseId", "").ToString();
 
-                lblVersion.Text = "Version : " + r + "\n\nNuméro de version : " + ProductName + "\n\nArchitecture : " + f;
+                lblVersion.Text = "Version : " + r + "\n\nVersion number : " + ProductName + "\n\nArchitecture : " + f;
             }
         }
 

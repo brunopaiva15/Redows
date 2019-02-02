@@ -42,7 +42,7 @@ namespace Redows
         {
             try
             {
-                if (MessageBox.Show("Etes-vous sûr(e) de vouloir désactiver Cortana sur ce PC ?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Are you sure you want to disable Cortana on this PC ?", "Disable Cortana", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     Cursor.Current = Cursors.WaitCursor;
 
@@ -60,7 +60,7 @@ namespace Redows
                     key2.SetValue("Start", 00000004);
                     key2.Close();
 
-                    MessageBox.Show("Cortana désactivée avec succès. Veuillez redémarrer votre ordinateur.");
+                    MessageBox.Show("Cortana successfully disabled. Please restart your computer.");
 
                     // CODE
 
@@ -69,7 +69,7 @@ namespace Redows
             }
             catch
             {
-                MessageBox.Show("Une erreur est survenue. Veuillez réessayer.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error has occurred. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -77,7 +77,7 @@ namespace Redows
         {
             try
             {
-                if (MessageBox.Show("Etes-vous sûr(e) de vouloir désactiver NDU sur ce PC ?\n\n(Remarque : NDU est un composant Windows lié au réseau, qui consomme énormément de RAM. Sa désactivation n'affecte pas l'utilisation du système d'exploitation.)", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Are you sure you want to disable NDU on this PC ?\n\n(Note: NDU is a Windows component linked to the network, which consumes a lot of RAM. Disabling it does not affect the use of the operating system.)", "Disable NDU", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     Cursor.Current = Cursors.WaitCursor;
 
@@ -87,7 +87,7 @@ namespace Redows
                     key.SetValue("Start", 00000004);
                     key.Close();
 
-                    MessageBox.Show("NDU désactivé avec succès. Veuillez redémarrer votre ordinateur.");
+                    MessageBox.Show("NDU successfully disabled. Please restart your computer.");
 
                     // CODE
 
@@ -96,7 +96,7 @@ namespace Redows
             }
             catch
             {
-                MessageBox.Show("Une erreur est survenue. Veuillez réessayer.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error has occurred. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -104,7 +104,7 @@ namespace Redows
         {
             try
             {
-                if (MessageBox.Show("Etes-vous sûr(e) de vouloir désactiver Prefetch sur ce PC ?\n\n(Remarque : Prefetch est un composant Windows générant des fichiers aidant à démarrer plus rapidement les logiciels. Le problème est que celui-ci écrit très souvent sur le disque. Si vous avez un HDD, aucun problème. Ne désactivez pas Prefetch. Mais si vous avez un SSD, sachant que ceux-ci sont limités en écriture, il vaudrait mieux le désactiver.", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Are you sure you want to disable Prefetch on this PC ?\n\n(Note: Prefetch is a Windows component that generates files that help to start software faster. The problem is that it often writes to the disk. If you have an HDD, no problem. Do not disable Prefetch. But if you have an SSD, knowing that these are limited in writing, it would be better to disable it.)", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     Cursor.Current = Cursors.WaitCursor;
 
@@ -114,7 +114,7 @@ namespace Redows
                     key.SetValue("EnablePrefetcher", 00000000);
                     key.Close();
 
-                    MessageBox.Show("Prefetch désactivé avec succès. Veuillez redémarrer votre ordinateur.");
+                    MessageBox.Show("Prefetch successfully disabled. Please restart your computer.");
 
                     // CODE
 
@@ -123,7 +123,7 @@ namespace Redows
             }
             catch
             {
-                MessageBox.Show("Une erreur est survenue. Veuillez réessayer.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error has occurred. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -131,7 +131,7 @@ namespace Redows
         {
             try
             {
-                if (MessageBox.Show("Etes-vous sûr(e) de vouloir désactiver Superfetch sur ce PC ?\n\n(Remarque : Superfetch est un service Windows chargeant des fichiers et des données dans la RAM aidant à démarrer plus rapidement les logiciels. Le problème est que celui-ci écrit très souvent sur le disque. Si vous avez un HDD, aucun problème. Ne désactivez pas Superfetch. Mais si vous avez un SSD, sachant que ceux-ci sont limités en écriture, il vaudrait mieux le désactiver.", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Are you sure you want to disable Superfetch on this PC ?\n\n(Note: Superfetch is a Windows service that loads files and data into RAM, helping to start software faster. The problem is that it often writes to the disk. If you have an HDD, no problem. Do not disable Superfetch. But if you have an SSD, knowing that these are limited in writing, it would be better to disable it.)", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     Cursor.Current = Cursors.WaitCursor;
 
@@ -157,7 +157,7 @@ namespace Redows
                     proc2.Start();
                     proc2.WaitForExit();
 
-                    MessageBox.Show("Superfetch désactivé avec succès. Veuillez redémarrer votre ordinateur.");
+                    MessageBox.Show("Superfetch successfully disabled. Please restart your computer.");
 
                     // CODE
 
@@ -166,7 +166,7 @@ namespace Redows
             }
             catch
             {
-                MessageBox.Show("Une erreur est survenue. Veuillez réessayer.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error has occurred. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -183,7 +183,7 @@ namespace Redows
         {
             try
             {
-                DialogResult form1 = MessageBox.Show("Etes-vous sûr(e) de vouloir quitter l'application ?", "Quitter", MessageBoxButtons.YesNo);
+                DialogResult form1 = MessageBox.Show("Are you sure you want to leave the utility?", "Exit", MessageBoxButtons.YesNo);
 
                 if (form1 == DialogResult.Yes)
                 {
@@ -214,7 +214,7 @@ namespace Redows
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur lors de la fermeture du programme (0x000E_07).\n\n(" + ex.Message + ")", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error when closing the program.\n\n(" + ex.Message + ")", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
