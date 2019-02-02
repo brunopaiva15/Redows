@@ -16,7 +16,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 To get started, download the project on GitHub. Unzip the folder somewhere on your computer. Then open the "Redows.sln" file with Visual Studio 2017. There you go. The project is open and you can modify it at your convenience.
 
-##  Deployment
+## 💿 Deployment
 
 To deploy and test the application, navigate to the /Redows/bin/Debug/ folder and launch "Redows.exe".
 
