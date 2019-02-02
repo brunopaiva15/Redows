@@ -29,7 +29,7 @@ namespace Redows
     {
         public string VersionActuelle()
         {
-            return "Redows 2.4";
+            return "Redows 2.5";
         }
     }
 }
