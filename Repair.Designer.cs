@@ -74,11 +74,11 @@ namespace Redows
             // 
             this.lblTitre.AutoSize = true;
             this.lblTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitre.Location = new System.Drawing.Point(57, 116);
+            this.lblTitre.Location = new System.Drawing.Point(93, 114);
             this.lblTitre.Name = "lblTitre";
-            this.lblTitre.Size = new System.Drawing.Size(248, 34);
+            this.lblTitre.Size = new System.Drawing.Size(171, 34);
             this.lblTitre.TabIndex = 0;
-            this.lblTitre.Text = "Alors comme ça vous êtes un expert ?\r\nOn vous fait confiance !";
+            this.lblTitre.Text = "So you\'re an expert then?\r\nWe trust you!";
             this.lblTitre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnReparerWIM
@@ -88,7 +88,7 @@ namespace Redows
             this.btnReparerWIM.Name = "btnReparerWIM";
             this.btnReparerWIM.Size = new System.Drawing.Size(331, 35);
             this.btnReparerWIM.TabIndex = 12;
-            this.btnReparerWIM.Text = "Réparer avec fichier WIM";
+            this.btnReparerWIM.Text = "Repair with WIM file";
             this.btnReparerWIM.UseVisualStyleBackColor = true;
             this.btnReparerWIM.Click += new System.EventHandler(this.btnReparerWIM_Click);
             // 
@@ -115,9 +115,9 @@ namespace Redows
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(12, 185);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 13);
+            this.label7.Size = new System.Drawing.Size(81, 13);
             this.label7.TabIndex = 2;
-            this.label7.Text = "Fichier WIM à utiliser :";
+            this.label7.Text = "WIM file to use:";
             // 
             // tbxIndex
             // 
@@ -130,11 +130,11 @@ namespace Redows
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(206, 23);
+            this.label9.Location = new System.Drawing.Point(189, 23);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 17);
+            this.label9.Size = new System.Drawing.Size(101, 17);
             this.label9.TabIndex = 9;
-            this.label9.Text = "N° d\'index :";
+            this.label9.Text = "Index number :";
             // 
             // openFileDialog1
             // 
@@ -146,7 +146,7 @@ namespace Redows
             this.btnConnaitre.Name = "btnConnaitre";
             this.btnConnaitre.Size = new System.Drawing.Size(223, 23);
             this.btnConnaitre.TabIndex = 6;
-            this.btnConnaitre.Text = "Connaître";
+            this.btnConnaitre.Text = "Know index number";
             this.btnConnaitre.UseVisualStyleBackColor = true;
             this.btnConnaitre.Click += new System.EventHandler(this.btnConnaitre_Click);
             // 
@@ -156,9 +156,9 @@ namespace Redows
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 214);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 13);
+            this.label2.Size = new System.Drawing.Size(77, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Connaitre n° d\'index :";
+            this.label2.Text = "Index number :";
             // 
             // pictureBox1
             // 
@@ -175,9 +175,9 @@ namespace Redows
             this.btnModeBasique.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModeBasique.Location = new System.Drawing.Point(7, 362);
             this.btnModeBasique.Name = "btnModeBasique";
-            this.btnModeBasique.Size = new System.Drawing.Size(81, 23);
+            this.btnModeBasique.Size = new System.Drawing.Size(96, 23);
             this.btnModeBasique.TabIndex = 13;
-            this.btnModeBasique.Text = "<- Basique";
+            this.btnModeBasique.Text = "<- Easy mode";
             this.btnModeBasique.UseVisualStyleBackColor = true;
             this.btnModeBasique.Click += new System.EventHandler(this.btnModeBasique_Click);
             // 
@@ -188,7 +188,7 @@ namespace Redows
             this.groupBox1.Size = new System.Drawing.Size(347, 82);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Fichier";
+            this.groupBox1.Text = "File";
             // 
             // groupBox2
             // 
@@ -201,16 +201,16 @@ namespace Redows
             this.groupBox2.Size = new System.Drawing.Size(347, 99);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Réparer";
+            this.groupBox2.Text = "Repair";
             // 
             // cbxCacherCMD
             // 
             this.cbxCacherCMD.AutoSize = true;
             this.cbxCacherCMD.Location = new System.Drawing.Point(12, 25);
             this.cbxCacherCMD.Name = "cbxCacherCMD";
-            this.cbxCacherCMD.Size = new System.Drawing.Size(87, 17);
+            this.cbxCacherCMD.Size = new System.Drawing.Size(75, 17);
             this.cbxCacherCMD.TabIndex = 0;
-            this.cbxCacherCMD.Text = "Cacher CMD";
+            this.cbxCacherCMD.Text = "Hide CMD";
             this.cbxCacherCMD.UseVisualStyleBackColor = true;
             this.cbxCacherCMD.CheckedChanged += new System.EventHandler(this.cbxCacherCMD_CheckedChanged);
             // 
@@ -218,12 +218,12 @@ namespace Redows
             // 
             this.lblEnReparation.AutoSize = true;
             this.lblEnReparation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnReparation.Location = new System.Drawing.Point(35, 115);
+            this.lblEnReparation.Location = new System.Drawing.Point(49, 114);
             this.lblEnReparation.Name = "lblEnReparation";
-            this.lblEnReparation.Size = new System.Drawing.Size(295, 34);
+            this.lblEnReparation.Size = new System.Drawing.Size(267, 34);
             this.lblEnReparation.TabIndex = 34;
-            this.lblEnReparation.Text = "Réparation en cours. Ne touchez à rien.\r\n(Bon, vous êtes un expert. Donc vous sav" +
-    "ez.)";
+            this.lblEnReparation.Text = "Repair in progress. Don\'t touch anything.\r\n(Okay, you\'re an expert. So you know.)" +
+    "";
             this.lblEnReparation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblEnReparation.Visible = false;
             // 

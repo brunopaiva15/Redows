@@ -55,14 +55,6 @@ namespace Redows
                     {
                         if (tbxIndex.Text != "" && Convert.ToDouble(tbxIndex.Text) >= 0 && Convert.ToDouble(tbxIndex.Text) <= 20)
                         {
-                            //try
-                            //{
-                            //}
-                            //catch
-                            //{
-                            //    MessageBox.Show("Oh. Vous n'avez pas de connexion à internet... Pas grave ! Continuons.", "Pas de réseau", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                            //}
-
                             try
                             {
                                 if (VERIFICATION_ACTIFOUPAS == true)
@@ -74,7 +66,7 @@ namespace Redows
                                     if (ACTIF_OU_PAS != "1")
                                     {
                                         Cursor.Current = Cursors.Default;
-                                        MessageBox.Show("Redows n'est pas disponible pour le moment. Désolé.", "Danger", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                        MessageBox.Show("Redows is not available at the moment.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                                         Quit quit = new Quit();
 
@@ -92,7 +84,7 @@ namespace Redows
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Redows n'a pas réussi à contacter le serveur central. Nous vous recommendons très fortement de ne pas effectuer de réparation.", "Erreur de réseau", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    MessageBox.Show("Redows was unable to contact the central server. We strongly recommend that you do not carry out any repairs.", "Network error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                     Cursor.Current = Cursors.Default;
                                     VERIFICATION_ACTIFOUPAS = false;
                                 }
@@ -120,7 +112,7 @@ namespace Redows
                             }
                             proc.StartInfo.ErrorDialog = true;
                             proc.StartInfo.Verb = "runas";
-                            btnReparerWIM.Text = "Réparation en cours...";
+                            btnReparerWIM.Text = "Repair in progress....";
                             if (bCacherFenetre == true)
                             {
                                 proc.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
@@ -133,20 +125,12 @@ namespace Redows
                             Cursor.Current = Cursors.WaitCursor;
                             proc.WaitForExit();
 
-                            //try
-                            //{
-                            //}
-                            //catch
-                            //{
-                            //    MessageBox.Show("Oh. Vous n'avez pas de connexion à internet... Pas grave ! Continuons.", "Pas de réseau", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                            //}
-
                             Cursor.Current = Cursors.Default;
 
                             lblTitre.Visible = true;
                             lblEnReparation.Visible = false;
 
-                            btnReparerWIM.Text = "Réparation terminée.";
+                            btnReparerWIM.Text = "Repair completed.";
                             End end = new End();
 
                             this.Hide();
@@ -157,7 +141,7 @@ namespace Redows
                         }
                         else
                         {
-                            MessageBox.Show("Veuillez entrer un numéro d'index valide avant d'effectuer cette action.", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Please enter a valid index number before performing this action.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                             btnReparerWIM.Enabled = true;
                             btnConnaitre.Enabled = true;
@@ -167,17 +151,17 @@ namespace Redows
                     }
                     else
                     {
-                        MessageBox.Show("Veuillez ouvrir un fichier WIM avant d'effectuer cette action.", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Please open a WIM file before performing this action.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Mais vous jouez à quoi ? Comment voulez-vous que la réparation fonctionne alors que le fichier n'existe pas ?\n\n(Je croyais que vous étiez un expert, moi.)", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("What the hell are you doing ? How do you expect the repair to work when the file does not exist ?\n\n(I thought you were an expert.)", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch
             {
-                MessageBox.Show("Oh. Une erreur inconnue s'est produite.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Oh. An unknown error occurred.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 btnReparerWIM.Enabled = true;
                 btnConnaitre.Enabled = true;
@@ -196,7 +180,7 @@ namespace Redows
             }
             catch
             {
-                MessageBox.Show("Oh. Une erreur inconnue s'est produite.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Oh. An unknown error occurred.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 btnReparerWIM.Enabled = true;
                 btnConnaitre.Enabled = true;
@@ -218,12 +202,12 @@ namespace Redows
                 }
                 else
                 {
-                    MessageBox.Show("Veuillez ouvrir un fichier WIM avant d'effectuer cette action.", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please open a WIM file before performing this action.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch
             {
-                MessageBox.Show("Oh. Une erreur inconnue s'est produite.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Oh. An unknown error occurred.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 btnReparerWIM.Enabled = true;
                 btnConnaitre.Enabled = true;
@@ -254,7 +238,7 @@ namespace Redows
                         if (ACTIF_OU_PAS != "1")
                         {
                             Cursor.Current = Cursors.Default;
-                            MessageBox.Show("Redows n'est pas disponible pour le moment. Désolé.", "Danger", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Redows is not available at the moment.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                             Quit quit = new Quit();
 
@@ -272,7 +256,7 @@ namespace Redows
                     }
                     else
                     {
-                        MessageBox.Show("Redows n'a pas réussi à contacter le serveur central. Nous vous recommendons très fortement de ne pas effectuer de réparation.", "Erreur de réseau", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Redows was unable to contact the central server. We strongly recommend that you do not carry out any repairs.", "Network error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         Cursor.Current = Cursors.Default;
                         VERIFICATION_ACTIFOUPAS = false;
                     }
@@ -366,19 +350,10 @@ namespace Redows
                 Cursor.Current = Cursors.WaitCursor;
                 proc1.WaitForExit();
 
-                //try
-                //{
-                //}
-                //catch
-                //{
-                //    MessageBox.Show("Oh. Vous n'avez pas de connexion à internet... Pas grave ! Continuons.", "Pas de réseau", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                //}
-
                 btnModeBasique.Enabled = true;
                 btnReparerWIM.Enabled = true;
                 btnConnaitre.Enabled = true;
                 btnOpenNumIndex.Enabled = true;
-
 
                 End end = new End();
 
@@ -388,7 +363,7 @@ namespace Redows
             }
             catch
             {
-                MessageBox.Show("Oh. Une erreur inconnue s'est produite.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Oh. An unknown error occurred.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 btnReparerWIM.Enabled = true;
                 btnConnaitre.Enabled = true;
@@ -401,7 +376,7 @@ namespace Redows
         {
             try
             {
-                DialogResult form1 = MessageBox.Show("Etes-vous sûr(e) de vouloir quitter l'application ?", "Quitter", MessageBoxButtons.YesNo);
+                DialogResult form1 = MessageBox.Show("Are you sure you want to leave the utility ?", "Exit", MessageBoxButtons.YesNo);
 
                 if (form1 == DialogResult.Yes)
                 {
@@ -432,7 +407,7 @@ namespace Redows
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur lors de la fermeture du programme (0x000E_07).\n\n(" + ex.Message + ")", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error when closing the utility.\n\n(" + ex.Message + ")", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -446,8 +421,8 @@ namespace Redows
             cbxCacherCMD.Checked = true;
 
             openFileDialog1.FileName = "";
-            openFileDialog1.Title = "Ouvrir fichier WIM";
-            openFileDialog1.Filter = "Fichiers WIM|*.wim";
+            openFileDialog1.Title = "Open WIM file";
+            openFileDialog1.Filter = "WIM files|*.wim";
 
             #region VERSION_WINDOWS
             string r = "";

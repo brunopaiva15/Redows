@@ -77,22 +77,22 @@ namespace Redows
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(139, 168);
+            this.label3.Location = new System.Drawing.Point(143, 168);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 17);
+            this.label3.Size = new System.Drawing.Size(70, 17);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Bienvenue.";
+            this.label3.Text = "Welcome.";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(72, 195);
+            this.label1.Location = new System.Drawing.Point(78, 197);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 51);
+            this.label1.Size = new System.Drawing.Size(197, 51);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Redows est un outil très pratique.\r\nIl regroupe plusieurs commandes \r\nsimples, ma" +
-    "is efficaces.";
+            this.label1.Text = "Redows is a very useful utility.\r\nIt includes several scripts\r\nsimple, but effect" +
+    "ive.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnStart
@@ -102,7 +102,7 @@ namespace Redows
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(155, 45);
             this.btnStart.TabIndex = 3;
-            this.btnStart.Text = "Commencer";
+            this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
@@ -122,7 +122,7 @@ namespace Redows
             this.btnCheckUpdates.Name = "btnCheckUpdates";
             this.btnCheckUpdates.Size = new System.Drawing.Size(124, 23);
             this.btnCheckUpdates.TabIndex = 4;
-            this.btnCheckUpdates.Text = "Vérifier les mises à jour";
+            this.btnCheckUpdates.Text = "Check for updates";
             this.btnCheckUpdates.UseVisualStyleBackColor = true;
             this.btnCheckUpdates.Click += new System.EventHandler(this.btnCheckUpdates_Click);
             // 
@@ -133,7 +133,7 @@ namespace Redows
             this.btnAvance.Name = "btnAvance";
             this.btnAvance.Size = new System.Drawing.Size(155, 23);
             this.btnAvance.TabIndex = 29;
-            this.btnAvance.Text = "Outils avancés";
+            this.btnAvance.Text = "Advanced tools";
             this.btnAvance.UseVisualStyleBackColor = true;
             this.btnAvance.Click += new System.EventHandler(this.btnAvance_Click);
             // 

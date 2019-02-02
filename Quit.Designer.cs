@@ -68,11 +68,11 @@ namespace Redows
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 196);
+            this.label1.Location = new System.Drawing.Point(41, 196);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 40);
+            this.label1.Size = new System.Drawing.Size(298, 40);
             this.label1.TabIndex = 30;
-            this.label1.Text = "Suite à un problème technique, Redows\r\nn\'est pas accessible pour le moment.";
+            this.label1.Text = "Due to a technical problem, Redows\r\nis not available at the moment.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnExit
@@ -82,7 +82,7 @@ namespace Redows
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(162, 33);
             this.btnExit.TabIndex = 31;
-            this.btnExit.Text = "Quitter Redows";
+            this.btnExit.Text = "Exit Redows";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
