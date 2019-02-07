@@ -76,9 +76,9 @@ namespace Redows
             this.lblTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitre.Location = new System.Drawing.Point(93, 114);
             this.lblTitre.Name = "lblTitre";
-            this.lblTitre.Size = new System.Drawing.Size(171, 34);
+            this.lblTitre.Size = new System.Drawing.Size(175, 34);
             this.lblTitre.TabIndex = 0;
-            this.lblTitre.Text = "So you\'re an expert then?\r\nWe trust you!";
+            this.lblTitre.Text = "So you\'re an expert then ?\r\nWe trust you !";
             this.lblTitre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnReparerWIM
@@ -218,7 +218,7 @@ namespace Redows
             // 
             this.lblEnReparation.AutoSize = true;
             this.lblEnReparation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnReparation.Location = new System.Drawing.Point(49, 114);
+            this.lblEnReparation.Location = new System.Drawing.Point(50, 114);
             this.lblEnReparation.Name = "lblEnReparation";
             this.lblEnReparation.Size = new System.Drawing.Size(267, 34);
             this.lblEnReparation.TabIndex = 34;

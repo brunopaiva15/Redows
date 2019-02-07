@@ -94,6 +94,7 @@ namespace Redows
         {
             try
             {
+
                 if (VERIFICATION_ACTIFOUPAS == true)
                 {
                     Cursor.Current = Cursors.AppStarting;
@@ -129,11 +130,11 @@ namespace Redows
 
             lblVersion.Text = VERSION_MINILABEL;
 
-            VERSION version = new VERSION();
+            VERSION_REDOWS version = new VERSION_REDOWS();
 
-            this.Text = version.VersionActuelle();
+            this.Text = VERSION;
 
-            lblTitre.Text = version.VersionActuelle();
+            lblTitre.Text = version.Version;
         }
 
         private void btnInfos_Click(object sender, EventArgs e)

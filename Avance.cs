@@ -217,5 +217,32 @@ namespace Redows
                 MessageBox.Show("Error when closing the program.\n\n(" + ex.Message + ")", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnDisDefender_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Are you sure you want to disable Windows Defender on this PC ?", "Disable Defender", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    Cursor.Current = Cursors.WaitCursor;
+
+                    // CODE
+
+                    RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows Defender");
+                    key.SetValue("DisableAntiSpyware", 00000001);
+                    key.Close();
+
+                    MessageBox.Show("Windows Defender successfully disabled. Please restart your computer.");
+
+                    // CODE
+
+                    Cursor.Current = Cursors.Default;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("An error has occurred. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

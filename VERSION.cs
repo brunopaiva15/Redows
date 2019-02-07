@@ -25,11 +25,20 @@ using System.Threading.Tasks;
 
 namespace Redows
 {
-    public class VERSION
+    public class VERSION_REDOWS
     {
-        public string VersionActuelle()
+        public string strVersion = "Redows 2.5";
+
+        public string Version
         {
-            return "Redows 2.5";
+            get
+            {
+                return strVersion;
+            }
+            set
+            {
+                strVersion = value;
+            }
         }
     }
 }

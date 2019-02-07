@@ -129,7 +129,7 @@ namespace Redows
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(61, 415);
+            this.label5.Location = new System.Drawing.Point(65, 415);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(146, 13);
             this.label5.TabIndex = 5;
@@ -149,11 +149,11 @@ namespace Redows
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(48, 365);
+            this.label6.Location = new System.Drawing.Point(35, 364);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(181, 26);
+            this.label6.Size = new System.Drawing.Size(208, 26);
             this.label6.TabIndex = 29;
-            this.label6.Text = "En cas de question, envoyez-moi\r\nun e-mail : ppaiva11144@gmail.com.";
+            this.label6.Text = "If you have any questions, please send me\r\nan e-mail : ppaiva11144@gmail.com.";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox2

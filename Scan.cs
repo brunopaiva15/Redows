@@ -274,9 +274,9 @@ namespace Redows
             bCacherFenetre = true;
             //cbxCacherCMD.Checked = true;
 
-            VERSION version = new VERSION();
+            VERSION_REDOWS version = new VERSION_REDOWS();
 
-            this.Text = version.VersionActuelle();
+            this.Text = version.Version;
 
             #region VERSION_WINDOWS
             string r = "";

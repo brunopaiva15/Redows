@@ -65,7 +65,7 @@ namespace Redows
             // 
             this.lblTitre.AutoSize = true;
             this.lblTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitre.Location = new System.Drawing.Point(12, 9);
+            this.lblTitre.Location = new System.Drawing.Point(12, 16);
             this.lblTitre.Name = "lblTitre";
             this.lblTitre.Size = new System.Drawing.Size(31, 2);
             this.lblTitre.TabIndex = 0;
@@ -77,7 +77,7 @@ namespace Redows
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(145, 168);
+            this.label3.Location = new System.Drawing.Point(145, 175);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 17);
             this.label3.TabIndex = 1;
@@ -87,7 +87,7 @@ namespace Redows
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(83, 198);
+            this.label1.Location = new System.Drawing.Point(83, 205);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(197, 51);
             this.label1.TabIndex = 2;
@@ -98,7 +98,7 @@ namespace Redows
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(104, 272);
+            this.btnStart.Location = new System.Drawing.Point(104, 279);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(155, 45);
             this.btnStart.TabIndex = 3;
@@ -108,7 +108,7 @@ namespace Redows
             // 
             // btnInfos
             // 
-            this.btnInfos.Location = new System.Drawing.Point(234, 352);
+            this.btnInfos.Location = new System.Drawing.Point(234, 359);
             this.btnInfos.Name = "btnInfos";
             this.btnInfos.Size = new System.Drawing.Size(25, 23);
             this.btnInfos.TabIndex = 5;
@@ -118,7 +118,7 @@ namespace Redows
             // 
             // btnCheckUpdates
             // 
-            this.btnCheckUpdates.Location = new System.Drawing.Point(104, 352);
+            this.btnCheckUpdates.Location = new System.Drawing.Point(104, 359);
             this.btnCheckUpdates.Name = "btnCheckUpdates";
             this.btnCheckUpdates.Size = new System.Drawing.Size(124, 23);
             this.btnCheckUpdates.TabIndex = 4;
@@ -129,7 +129,7 @@ namespace Redows
             // btnAvance
             // 
             this.btnAvance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAvance.Location = new System.Drawing.Point(104, 323);
+            this.btnAvance.Location = new System.Drawing.Point(104, 330);
             this.btnAvance.Name = "btnAvance";
             this.btnAvance.Size = new System.Drawing.Size(155, 23);
             this.btnAvance.TabIndex = 29;
@@ -140,10 +140,10 @@ namespace Redows
             // lblTitreBase
             // 
             this.lblTitreBase.AutoSize = true;
-            this.lblTitreBase.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitreBase.Location = new System.Drawing.Point(121, 8);
+            this.lblTitreBase.Font = new System.Drawing.Font("Product Sans", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitreBase.Location = new System.Drawing.Point(111, 9);
             this.lblTitreBase.Name = "lblTitreBase";
-            this.lblTitreBase.Size = new System.Drawing.Size(119, 31);
+            this.lblTitreBase.Size = new System.Drawing.Size(143, 43);
             this.lblTitreBase.TabIndex = 30;
             this.lblTitreBase.Text = "Redows";
             this.lblTitreBase.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -151,10 +151,10 @@ namespace Redows
             // lblVersion
             // 
             this.lblVersion.AutoSize = true;
-            this.lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVersion.Location = new System.Drawing.Point(164, 40);
+            this.lblVersion.Font = new System.Drawing.Font("Product Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersion.Location = new System.Drawing.Point(165, 48);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(35, 17);
+            this.lblVersion.Size = new System.Drawing.Size(34, 18);
             this.lblVersion.TabIndex = 31;
             this.lblVersion.Text = "v2.0";
             this.lblVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -162,7 +162,7 @@ namespace Redows
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Redows.Properties.Resources.winrep;
-            this.pictureBox1.Location = new System.Drawing.Point(137, 72);
+            this.pictureBox1.Location = new System.Drawing.Point(137, 79);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(88, 81);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -173,7 +173,7 @@ namespace Redows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 391);
+            this.ClientSize = new System.Drawing.Size(359, 396);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.lblTitreBase);
             this.Controls.Add(this.btnAvance);

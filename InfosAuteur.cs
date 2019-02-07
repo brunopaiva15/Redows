@@ -44,9 +44,9 @@ namespace Redows
             string r = "";
             string f = "";
 
-            VERSION version = new VERSION();
-            
-            lblVersionWin.Text = version.VersionActuelle();
+            VERSION_REDOWS version = new VERSION_REDOWS();
+
+            lblVersionWin.Text = version.Version;
 
             using (ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_OperatingSystem"))
             {

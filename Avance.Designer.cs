@@ -55,6 +55,7 @@ namespace Redows
             this.btnDesactiverSuperfetch = new System.Windows.Forms.Button();
             this.btnRetourAccueil = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnDisDefender = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,7 +112,7 @@ namespace Redows
             // 
             // btnRetourAccueil
             // 
-            this.btnRetourAccueil.Location = new System.Drawing.Point(10, 314);
+            this.btnRetourAccueil.Location = new System.Drawing.Point(12, 349);
             this.btnRetourAccueil.Name = "btnRetourAccueil";
             this.btnRetourAccueil.Size = new System.Drawing.Size(84, 23);
             this.btnRetourAccueil.TabIndex = 39;
@@ -129,11 +130,22 @@ namespace Redows
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
+            // btnDisDefender
+            // 
+            this.btnDisDefender.Location = new System.Drawing.Point(77, 300);
+            this.btnDisDefender.Name = "btnDisDefender";
+            this.btnDisDefender.Size = new System.Drawing.Size(121, 23);
+            this.btnDisDefender.TabIndex = 40;
+            this.btnDisDefender.Text = "Disable Defender";
+            this.btnDisDefender.UseVisualStyleBackColor = true;
+            this.btnDisDefender.Click += new System.EventHandler(this.btnDisDefender_Click);
+            // 
             // Avance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(273, 347);
+            this.ClientSize = new System.Drawing.Size(273, 384);
+            this.Controls.Add(this.btnDisDefender);
             this.Controls.Add(this.btnRetourAccueil);
             this.Controls.Add(this.btnDesactiverSuperfetch);
             this.Controls.Add(this.btnDesactiverPrefetch);
@@ -163,5 +175,6 @@ namespace Redows
         private System.Windows.Forms.Button btnDesactiverPrefetch;
         private System.Windows.Forms.Button btnDesactiverSuperfetch;
         private System.Windows.Forms.Button btnRetourAccueil;
+        private System.Windows.Forms.Button btnDisDefender;
     }
 }
