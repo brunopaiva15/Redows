@@ -22,7 +22,7 @@ To deploy and test the application import it, compile it and navigate to the /Re
 
 ## ✒ Authors
 
-* **Bruno Paiva** - https://brunopaiva.ch
+* **Bruno Paiva** - https://www.brunopaiva.ch
 
 ## 📃 License
 
