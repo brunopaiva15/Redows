@@ -138,7 +138,7 @@ namespace Redows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 335);
+            this.ClientSize = new System.Drawing.Size(359, 333);
             this.Controls.Add(this.btnRetourAccueil);
             this.Controls.Add(this.winVersion);
             this.Controls.Add(this.lblEnReparation);

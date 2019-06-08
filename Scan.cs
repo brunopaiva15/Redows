@@ -53,13 +53,13 @@ namespace Redows
                 {
                     if (VERIFICATION_ACTIFOUPAS == true)
                     {
-                        Cursor.Current = Cursors.AppStarting;
+                        //Cursor.Current = Cursors.AppStarting;
                         WebClient MAJ = new WebClient();
                         string ACTIF_OU_PAS = MAJ.DownloadString("https://brunopaiva.ch/Actif.txt");
 
                         if (ACTIF_OU_PAS != "1")
                         {
-                            Cursor.Current = Cursors.Default;
+                            //Cursor.Current = Cursors.Default;
                             MessageBox.Show("Redows is not available at the moment.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                             Quit quit = new Quit();
@@ -79,10 +79,14 @@ namespace Redows
                     else
                     {
                         MessageBox.Show("Redows was unable to contact the central server. We strongly recommend that you do not carry out any repairs.", "Network error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        Cursor.Current = Cursors.Default;
+                        //Cursor.Current = Cursors.Default;
                         VERIFICATION_ACTIFOUPAS = false;
                     }
                 }
+
+                //Wait wait = new Wait();
+
+                //wait.Show();
 
                 lblTitre.Visible = false;
                 lblEnReparation.Visible = true;
@@ -118,13 +122,11 @@ namespace Redows
                     procSFC.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
                 }
                 procSFC.Start();
-                Cursor.Current = Cursors.WaitCursor;
+                //Cursor.Current = Cursors.WaitCursor;
                 procSFC.WaitForExit();
 
-                btnStart.Text = "Repair in progress (Step 1/3)...";
-
-                Cursor.Current = Cursors.Default;
-                Cursor.Current = Cursors.AppStarting;
+                //Cursor.Current = Cursors.Default;
+                //Cursor.Current = Cursors.AppStarting;
 
                 Process proc = new Process();
                 proc.StartInfo.FileName = "cmd.exe";
@@ -147,13 +149,13 @@ namespace Redows
                     proc.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
                 }
                 proc.Start();
-                Cursor.Current = Cursors.WaitCursor;
+                //Cursor.Current = Cursors.WaitCursor;
                 proc.WaitForExit();
 
                 btnStart.Text = "Repair in progress (Step 2/3)....";
 
-                Cursor.Current = Cursors.Default;
-                Cursor.Current = Cursors.AppStarting;
+                //Cursor.Current = Cursors.Default;
+                //Cursor.Current = Cursors.AppStarting;
 
                 Process proc1 = new Process();
                 proc1.StartInfo.FileName = "cmd.exe";
@@ -176,13 +178,13 @@ namespace Redows
                     proc1.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
                 }
                 proc1.Start();
-                Cursor.Current = Cursors.WaitCursor;
+                //Cursor.Current = Cursors.WaitCursor;
                 proc1.WaitForExit();
 
                 btnStart.Text = "Repair in progress (Step 3/3)...";
 
-                Cursor.Current = Cursors.Default;
-                Cursor.Current = Cursors.AppStarting;
+                //Cursor.Current = Cursors.Default;
+                //Cursor.Current = Cursors.AppStarting;
 
                 Process proc2 = new Process();
                 proc2.StartInfo.FileName = "cmd.exe";
@@ -205,7 +207,7 @@ namespace Redows
                     proc2.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
                 }
                 proc2.Start();
-                Cursor.Current = Cursors.WaitCursor;
+                //Cursor.Current = Cursors.WaitCursor;
                 proc2.WaitForExit();
 
                 btnStart.Text = "Repair completed";
@@ -215,6 +217,8 @@ namespace Redows
                 this.BackColor = Color.White;
                 lblTitre.Visible = true;
                 lblEnReparation.Visible = false;
+
+                //wait.Close();
 
                 MessageBox.Show("Repair successfully completed.", "Success", MessageBoxButtons.OK);
 
