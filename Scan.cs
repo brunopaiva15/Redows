@@ -97,7 +97,7 @@ namespace Redows
                 btnModeExpert.Enabled = false;
                 btnStart.Enabled = false;
 
-                Cursor.Current = Cursors.AppStarting;
+                Cursor.Current = Cursors.WaitCursor;
 
                 btnStart.Text = "Repair in progress (Step 1/3)...";
 
