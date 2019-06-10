@@ -55,6 +55,7 @@ namespace Redows
             this.btnDesactiverSuperfetch = new System.Windows.Forms.Button();
             this.btnRetourAccueil = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnDeleteOneDrive = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@ namespace Redows
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 109);
+            this.label1.Location = new System.Drawing.Point(55, 108);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(163, 17);
             this.label1.TabIndex = 29;
@@ -71,7 +72,7 @@ namespace Redows
             // 
             // btnDesCortana
             // 
-            this.btnDesCortana.Location = new System.Drawing.Point(77, 148);
+            this.btnDesCortana.Location = new System.Drawing.Point(75, 142);
             this.btnDesCortana.Name = "btnDesCortana";
             this.btnDesCortana.Size = new System.Drawing.Size(121, 23);
             this.btnDesCortana.TabIndex = 30;
@@ -81,7 +82,7 @@ namespace Redows
             // 
             // btnDesNDU
             // 
-            this.btnDesNDU.Location = new System.Drawing.Point(77, 186);
+            this.btnDesNDU.Location = new System.Drawing.Point(75, 171);
             this.btnDesNDU.Name = "btnDesNDU";
             this.btnDesNDU.Size = new System.Drawing.Size(121, 23);
             this.btnDesNDU.TabIndex = 32;
@@ -91,7 +92,7 @@ namespace Redows
             // 
             // btnDesactiverPrefetch
             // 
-            this.btnDesactiverPrefetch.Location = new System.Drawing.Point(77, 224);
+            this.btnDesactiverPrefetch.Location = new System.Drawing.Point(75, 200);
             this.btnDesactiverPrefetch.Name = "btnDesactiverPrefetch";
             this.btnDesactiverPrefetch.Size = new System.Drawing.Size(121, 23);
             this.btnDesactiverPrefetch.TabIndex = 33;
@@ -101,7 +102,7 @@ namespace Redows
             // 
             // btnDesactiverSuperfetch
             // 
-            this.btnDesactiverSuperfetch.Location = new System.Drawing.Point(77, 262);
+            this.btnDesactiverSuperfetch.Location = new System.Drawing.Point(75, 229);
             this.btnDesactiverSuperfetch.Name = "btnDesactiverSuperfetch";
             this.btnDesactiverSuperfetch.Size = new System.Drawing.Size(121, 23);
             this.btnDesactiverSuperfetch.TabIndex = 34;
@@ -129,11 +130,22 @@ namespace Redows
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
+            // btnDeleteOneDrive
+            // 
+            this.btnDeleteOneDrive.Location = new System.Drawing.Point(75, 258);
+            this.btnDeleteOneDrive.Name = "btnDeleteOneDrive";
+            this.btnDeleteOneDrive.Size = new System.Drawing.Size(121, 23);
+            this.btnDeleteOneDrive.TabIndex = 40;
+            this.btnDeleteOneDrive.Text = "Delete OneDrive";
+            this.btnDeleteOneDrive.UseVisualStyleBackColor = true;
+            this.btnDeleteOneDrive.Click += new System.EventHandler(this.BtnDeleteOneDrive_Click);
+            // 
             // Avance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(273, 347);
+            this.Controls.Add(this.btnDeleteOneDrive);
             this.Controls.Add(this.btnRetourAccueil);
             this.Controls.Add(this.btnDesactiverSuperfetch);
             this.Controls.Add(this.btnDesactiverPrefetch);
@@ -163,5 +175,6 @@ namespace Redows
         private System.Windows.Forms.Button btnDesactiverPrefetch;
         private System.Windows.Forms.Button btnDesactiverSuperfetch;
         private System.Windows.Forms.Button btnRetourAccueil;
+        private System.Windows.Forms.Button btnDeleteOneDrive;
     }
 }

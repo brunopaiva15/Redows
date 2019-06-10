@@ -104,7 +104,7 @@ namespace Redows
         {
             try
             {
-                if (MessageBox.Show("Are you sure you want to disable Prefetch on this PC ?\n\n(Note: Prefetch is a Windows component that generates files that help to start software faster. The problem is that it often writes to the disk. If you have an HDD, no problem. Do not disable Prefetch. But if you have an SSD, knowing that these are limited in writing, it would be better to disable it.)", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Are you sure you want to disable Prefetch on this PC ?\n\n(Note: Prefetch is a Windows component that generates files that help to start software faster. The problem is that it often writes to the disk. If you have an HDD, no problem. Do not disable Prefetch. But if you have an SSD, knowing that these are limited in writing, it would be better to disable it.)", "Disable Prefetch", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     Cursor.Current = Cursors.WaitCursor;
 
@@ -131,7 +131,7 @@ namespace Redows
         {
             try
             {
-                if (MessageBox.Show("Are you sure you want to disable Superfetch on this PC ?\n\n(Note: Superfetch is a Windows service that loads files and data into RAM, helping to start software faster. The problem is that it often writes to the disk. If you have an HDD, no problem. Do not disable Superfetch. But if you have an SSD, knowing that these are limited in writing, it would be better to disable it.)", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Are you sure you want to disable Superfetch on this PC ?\n\n(Note: Superfetch is a Windows service that loads files and data into RAM, helping to start software faster. The problem is that it often writes to the disk. If you have an HDD, no problem. Do not disable Superfetch. But if you have an SSD, knowing that these are limited in writing, it would be better to disable it.)", "Disable Superfetch", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     Cursor.Current = Cursors.WaitCursor;
 
@@ -215,6 +215,81 @@ namespace Redows
             catch (Exception ex)
             {
                 MessageBox.Show("Error when closing the program.\n\n(" + ex.Message + ")", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void BtnDeleteOneDrive_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to delete OneDrive on this PC ?", "Delete OneDrive", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Cursor.Current = Cursors.WaitCursor;
+
+                Process proc1 = new Process();
+                proc1.StartInfo.FileName = "cmd";
+                proc1.StartInfo.Verb = "runas";
+                proc1.StartInfo.Arguments = "/k start /wait \"\" \"%SYSTEMROOT%\\SYSWOW64\\ONEDRIVESETUP.EXE\" /UNINSTALL & exit";
+                proc1.StartInfo.ErrorDialog = true;
+                proc1.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
+                proc1.Start();
+                proc1.WaitForExit();
+
+                Process proc2 = new Process();
+                proc2.StartInfo.FileName = "cmd";
+                proc2.StartInfo.Verb = "runas";
+                proc2.StartInfo.Arguments = "/k rd C:\\OneDriveTemp /Q /S >NUL 2>&1 & exit";
+                proc2.StartInfo.ErrorDialog = true;
+                proc2.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
+                proc2.Start();
+                proc2.WaitForExit();
+
+                Process proc3 = new Process();
+                proc3.StartInfo.FileName = "cmd";
+                proc3.StartInfo.Verb = "runas";
+                proc3.StartInfo.Arguments = "/k rd \"%USERPROFILE%\\OneDrive\" /Q /S >NUL 2>&1 & exit";
+                proc3.StartInfo.ErrorDialog = true;
+                proc3.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
+                proc3.Start();
+                proc3.WaitForExit();
+
+                Process proc4 = new Process();
+                proc4.StartInfo.FileName = "cmd";
+                proc4.StartInfo.Verb = "runas";
+                proc4.StartInfo.Arguments = "/k rd \"%LOCALAPPDATA%\\Microsoft\\OneDrive\" /Q /S >NUL 2>&1 & exit";
+                proc4.StartInfo.ErrorDialog = true;
+                proc4.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
+                proc4.Start();
+                proc4.WaitForExit();
+
+                Process proc5 = new Process();
+                proc5.StartInfo.FileName = "cmd";
+                proc5.StartInfo.Verb = "runas";
+                proc5.StartInfo.Arguments = "/k rd \"%PROGRAMDATA%\\Microsoft OneDrive\" /Q /S >NUL 2>&1 & exit";
+                proc5.StartInfo.ErrorDialog = true;
+                proc5.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
+                proc5.Start();
+                proc5.WaitForExit();
+
+                Process proc6 = new Process();
+                proc6.StartInfo.FileName = "cmd";
+                proc6.StartInfo.Verb = "runas";
+                proc6.StartInfo.Arguments = "/k reg add \"HKEY_CLASSES_ROOT\\CLSID\\{ 018D5C66 - 4533 - 4307 - 9B53 - 224DE2ED1FE6}\\ShellFolder\" /f /v Attributes /t REG_DWORD /d 0 >NUL 2>&1 & exit";
+                proc6.StartInfo.ErrorDialog = true;
+                proc6.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
+                proc6.Start();
+                proc6.WaitForExit();
+
+                Process proc7 = new Process();
+                proc7.StartInfo.FileName = "cmd";
+                proc7.StartInfo.Verb = "runas";
+                proc7.StartInfo.Arguments = "/k reg add \"HKEY_CLASSES_ROOT\\Wow6432Node\\CLSID\\{ 018D5C66 - 4533 - 4307 - 9B53 - 224DE2ED1FE6}\\ShellFolder\" /f /v Attributes /t REG_DWORD /d 0 >NUL 2>&1 & exit";
+                proc7.StartInfo.ErrorDialog = true;
+                proc7.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
+                proc7.Start();
+                proc7.WaitForExit();
+
+                Cursor.Current = Cursors.Default;
+
+                MessageBox.Show("To apply the changes, restart your computer.");
             }
         }
     }
