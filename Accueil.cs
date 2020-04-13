@@ -38,8 +38,8 @@ namespace Redows
             InitializeComponent();
         }
 
-        string VERSION = "Redows 2.6";
-        string VERSION_MINILABEL = "v2.6";
+        string VERSION = "Redows 2.7";
+        string VERSION_MINILABEL = "v2.7";
         bool VERIFICATION_ACTIFOUPAS = true;
 
         private void btnStart_Click(object sender, EventArgs e)

@@ -220,10 +220,9 @@ namespace Redows
             this.lblEnReparation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEnReparation.Location = new System.Drawing.Point(49, 114);
             this.lblEnReparation.Name = "lblEnReparation";
-            this.lblEnReparation.Size = new System.Drawing.Size(267, 34);
+            this.lblEnReparation.Size = new System.Drawing.Size(263, 17);
             this.lblEnReparation.TabIndex = 34;
-            this.lblEnReparation.Text = "Repair in progress. Don\'t touch anything.\r\n(Okay, you\'re an expert. So you know.)" +
-    "";
+            this.lblEnReparation.Text = "Repair in progress. Don\'t touch anything";
             this.lblEnReparation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblEnReparation.Visible = false;
             // 

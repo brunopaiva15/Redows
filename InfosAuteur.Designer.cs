@@ -151,9 +151,9 @@ namespace Redows
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(48, 365);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(181, 26);
+            this.label6.Size = new System.Drawing.Size(175, 26);
             this.label6.TabIndex = 29;
-            this.label6.Text = "En cas de question, envoyez-moi\r\nun e-mail : ppaiva11144@gmail.com.";
+            this.label6.Text = "For any questions, please contact : \r\nppaiva11144@gmail.com";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox2

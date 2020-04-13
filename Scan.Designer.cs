@@ -109,8 +109,8 @@ namespace Redows
             this.lblEnReparation.Name = "lblEnReparation";
             this.lblEnReparation.Size = new System.Drawing.Size(243, 68);
             this.lblEnReparation.TabIndex = 29;
-            this.lblEnReparation.Text = "Redows performs a repair\r\nof the damaged files on your system.\r\nPlease wait and d" +
-    "on\'t touch anything.\r\nRepair can take up to 15 minutes.\r\n";
+            this.lblEnReparation.Text = "Redows is performing a repair\r\nof the damaged files on your system.\r\nPlease wait " +
+    "and don\'t touch anything.\r\nRepair can take up to 15 minutes.\r\n";
             this.lblEnReparation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblEnReparation.Visible = false;
             // 
