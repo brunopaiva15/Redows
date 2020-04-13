@@ -32,6 +32,7 @@ using System.Windows.Forms;
 using System.Net.Mail;
 using System.Net;
 using System.Net.NetworkInformation;
+using System.Windows.Threading;
 
 namespace Redows
 {
@@ -122,7 +123,6 @@ namespace Redows
                     procSFC.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
                 }
                 procSFC.Start();
-                //Cursor.Current = Cursors.WaitCursor;
                 procSFC.WaitForExit();
 
                 //Cursor.Current = Cursors.Default;

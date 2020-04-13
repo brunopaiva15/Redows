@@ -46,23 +46,23 @@ namespace Redows
                 {
                     Cursor.Current = Cursors.WaitCursor;
 
-                    // CODE
+                    Process proc1 = new Process();
+                    proc1.StartInfo.FileName = "cmd";
+                    proc1.StartInfo.Verb = "runas";
+                    proc1.StartInfo.Arguments = "/k reg add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search\" /v \"AllowCortana\" /t REG_DWORD /d 0 & exit";
+                    proc1.StartInfo.ErrorDialog = true;
+                    proc1.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
+                    proc1.Start();
+                    proc1.WaitForExit();
 
-                    RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\Windows Search");
-                    key.SetValue("AllowCortana", 00000000);
-                    key.Close();
-
-                    RegistryKey key1 = Registry.CurrentUser.CreateSubKey(@"SYSTEM\CurrentControlSet\Services\TapiSrv");
-                    key1.SetValue("Start", 00000004);
-                    key1.Close();
-
-                    RegistryKey key2 = Registry.CurrentUser.CreateSubKey(@"SYSTEM\CurrentControlSet\Services\WbioSrvc");
-                    key2.SetValue("Start", 00000004);
-                    key2.Close();
-
-                    MessageBox.Show("Cortana successfully disabled. Please restart your computer.");
-
-                    // CODE
+                    Process proc2 = new Process();
+                    proc2.StartInfo.FileName = "cmd";
+                    proc2.StartInfo.Verb = "runas";
+                    proc2.StartInfo.Arguments = "/k PowerShell -Command \"Get - AppxPackage * Cortana * | Remove - AppxPackage\" & exit";
+                    proc2.StartInfo.ErrorDialog = true;
+                    proc2.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
+                    proc2.Start();
+                    proc2.WaitForExit();
 
                     Cursor.Current = Cursors.Default;
                 }
