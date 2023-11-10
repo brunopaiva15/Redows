@@ -1,7 +1,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/brunopaiva15/redows/badge)](https://www.codefactor.io/repository/github/brunopaiva15/redows)
 
 # Redows
-
+.
 Redows is a free and open source repair software for Windows. All the tools made available in this program
 were created and developed by Microsoft®.
 
